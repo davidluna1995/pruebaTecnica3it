@@ -1,0 +1,233 @@
+<div class="container">
+  <div class="row my-4" *ngIf="indicador">
+
+    <div class="col-md-4 my-2">
+      <div class="card pointer" [routerLink]="['/detalle-precios-indicador/' + indicador.bitcoin.codigo]">
+        <div class="card-body">
+
+          <div class="row">
+            <div class="col-9">
+              <h5 class="card-title">{{indicador.bitcoin.nombre}}</h5>
+              <p class="card-text">{{indicador.bitcoin.unidad_medida}}</p>
+            </div>
+            <div class="col-3 my-4" [routerLink]="['/detalle-indicador/' + indicador.bitcoin.codigo]">
+              <i class="fas fa-info-circle mr-2"></i>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 my-2">
+      <div class="card pointer" [routerLink]="['/detalle-precios-indicador/' + indicador.dolar.codigo]">
+        <div class="card-body">
+
+          <div class="row">
+            <div class="col-9">
+              <h5 class="card-title">{{indicador.dolar.nombre}}</h5>
+              <p class="card-text">{{indicador.dolar.unidad_medida}}</p>
+            </div>
+            <div class="col-3 my-4" [routerLink]="['/detalle-indicador/' + indicador.dolar.codigo]">
+              <i class="fas fa-info-circle mr-2"></i>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 my-2">
+      <div class="card pointer" [routerLink]="['/detalle-precios-indicador/' + indicador.dolar_intercambio.codigo]">
+        <div class="card-body">
+
+          <div class="row">
+            <div class="col-9">
+              <h5 class="card-title">{{indicador.dolar_intercambio.nombre}}</h5>
+              <p class="card-text">{{indicador.dolar_intercambio.unidad_medida}}</p>
+            </div>
+            <div class="col-3 my-4" [routerLink]="['/detalle-indicador/' + indicador.dolar_intercambio.codigo]">
+              <i class="fas fa-info-circle mr-2"></i>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 my-2">
+      <div class="card pointer" [routerLink]="['/detalle-precios-indicador/' + indicador.euro.codigo]">
+        <div class="card-body">
+
+          <div class="row">
+            <div class="col-9">
+              <h5 class="card-title">{{indicador.euro.nombre}}</h5>
+              <p class="card-text">{{indicador.euro.unidad_medida}}</p>
+            </div>
+            <div class="col-3 my-4" [routerLink]="['/detalle-indicador/' + indicador.euro.codigo]">
+              <i class="fas fa-info-circle mr-2"></i>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 my-2">
+      <div class="card pointer" [routerLink]="['/detalle-precios-indicador/' + indicador.imacec.codigo]">
+        <div class="card-body">
+
+          <div class="row">
+            <div class="col-9">
+              <h5 class="card-title">{{indicador.imacec.nombre}}</h5>
+              <p class="card-text">{{indicador.imacec.unidad_medida}}</p>
+            </div>
+            <div class="col-3 my-4" [routerLink]="['/detalle-indicador/' + indicador.imacec.codigo]">
+              <i class="fas fa-info-circle mr-2"></i>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 my-2">
+      <div class="card pointer" [routerLink]="['/detalle-precios-indicador/' + indicador.ipc.codigo]">
+        <div class="card-body">
+
+          <div class="row">
+            <div class="col-9">
+              <h5 class="card-title">{{indicador.ipc.nombre}}</h5>
+              <p class="card-text">{{indicador.ipc.unidad_medida}}</p>
+            </div>
+            <div class="col-3 my-4" [routerLink]="['/detalle-indicador/' + indicador.ipc.codigo]">
+              <i class="fas fa-info-circle mr-2"></i>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 my-2">
+      <div class="card pointer" [routerLink]="['/detalle-precios-indicador/' + indicador.ivp.codigo]">
+        <div class="card-body">
+
+          <div class="row">
+            <div class="col-9">
+              <h5 class="card-title">{{indicador.ivp.nombre}}</h5>
+              <p class="card-text">{{indicador.ivp.unidad_medida}}</p>
+            </div>
+            <div class="col-3 my-4" [routerLink]="['/detalle-indicador/' + indicador.ivp.codigo]">
+              <i class="fas fa-info-circle mr-2"></i>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 my-2">
+      <div class="card pointer" [routerLink]="['/detalle-precios-indicador/' + indicador.libra_cobre.codigo]">
+        <div class="card-body">
+
+          <div class="row">
+            <div class="col-9">
+              <h5 class="card-title">{{indicador.libra_cobre.nombre}}</h5>
+              <p class="card-text">{{indicador.libra_cobre.unidad_medida}}</p>
+            </div>
+            <div class="col-3 my-4" [routerLink]="['/detalle-indicador/' + indicador.libra_cobre.codigo]">
+              <i class="fas fa-info-circle mr-2"></i>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 my-2">
+      <div class="card pointer" [routerLink]="['/detalle-precios-indicador/' + indicador.tasa_desempleo.codigo]">
+        <div class="card-body">
+
+          <div class="row">
+            <div class="col-9">
+              <h5 class="card-title">{{indicador.tasa_desempleo.nombre}}</h5>
+              <p class="card-text">{{indicador.tasa_desempleo.unidad_medida}}</p>
+            </div>
+            <div class="col-3 my-4" [routerLink]="['/detalle-indicador/' + indicador.tasa_desempleo.codigo]">
+              <i class="fas fa-info-circle mr-2"></i>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 my-2">
+      <div class="card pointer" [routerLink]="['/detalle-precios-indicador/' + indicador.tpm.codigo]">
+        <div class="card-body">
+
+          <div class="row">
+            <div class="col-9">
+              <h5 class="card-title">{{indicador.tpm.nombre}}</h5>
+              <p class="card-text">{{indicador.tpm.unidad_medida}}</p>
+            </div>
+            <div class="col-3 my-4" [routerLink]="['/detalle-indicador/' + indicador.tpm.codigo]">
+              <i class="fas fa-info-circle mr-2"></i>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 my-2">
+      <div class="card pointer" [routerLink]="['/detalle-precios-indicador/' + indicador.uf.codigo]">
+        <div class="card-body">
+
+          <div class="row">
+            <div class="col-9">
+              <h5 class="card-title">{{indicador.uf.nombre}}</h5>
+              <p class="card-text">{{indicador.uf.unidad_medida}}</p>
+            </div>
+            <div class="col-3 my-4" [routerLink]="['/detalle-indicador/' + indicador.uf.codigo]">
+              <i class="fas fa-info-circle mr-2"></i>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 my-2">
+      <div class="card pointer" [routerLink]="['/detalle-precios-indicador/' + indicador.utm.codigo]">
+        <div class="card-body">
+
+          <div class="row">
+            <div class="col-9">
+              <h5 class="card-title">{{indicador.utm.nombre}}</h5>
+              <p class="card-text">{{indicador.utm.unidad_medida}}</p>
+            </div>
+            <div class="col-3 my-4" [routerLink]="['/detalle-indicador/' + indicador.utm.codigo]">
+              <i class="fas fa-info-circle mr-2"></i>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+
+  <div class="row my-4">
+    <div class="col-12">
+      <button class="btn btn-outline-primary" type="button" [routerLink]="['/']">
+        <i class="fas fa-arrow-left"></i> Indicadores
+      </button>
+    </div>
+    <div class="col-12 text-center">
+      <p class="h3">{{indicadorPrecio.nombre}}</p>
+    </div>
+  </div>
+
+  <div class="row my-4">
+
+    <div class="col-md-4 my-2" *ngFor="let detalle of indicadorPrecio.serie">
+      <div class="card">
+        <div class="card-body">
+
+          <div class="row my-2">
+            <div class="col-8">
+              <h5 class="card-title text-primary">{{detalle.fecha | date: 'dd-MM-yyyy'}}</h5>
+            </div>
+            <div class="col-4 font-weight-bold">
+              <i class="fas fa-dollar-sign"></i> {{detalle.valor}}
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<app-footer></app-footer>
